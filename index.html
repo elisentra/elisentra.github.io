@@ -1,17 +1,18 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Elisentra</title>
 
-  <!-- Minimal, serious styling -->
   <style>
     :root {
-      --bg: #0b0e11;
+      --bg-dark: #0b0e11;
+      --bg-mid: #0f1419;
       --fg: #e6e6e6;
       --muted: #9aa0a6;
-      --accent: #6aa9ff;
+      --accent: #7fb3ff;
     }
 
     * {
@@ -22,7 +23,12 @@
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
                    Roboto, Helvetica, Arial, sans-serif;
-      background-color: var(--bg);
+      background: linear-gradient(
+        160deg,
+        var(--bg-dark) 0%,
+        var(--bg-mid) 60%,
+        #121820 100%
+      );
       color: var(--fg);
       display: flex;
       min-height: 100vh;
@@ -31,28 +37,27 @@
     }
 
     main {
-      max-width: 760px;
-      padding: 5rem 2rem 3rem;
+      max-width: 820px;
+      padding: 5.5rem 2rem 3.5rem;
     }
 
     h1 {
-      font-size: 2.8rem;
-      letter-spacing: 0.04em;
-      margin-bottom: 1rem;
+      font-size: 2.9rem;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.75rem;
       text-transform: uppercase;
     }
 
     .tagline {
-      font-size: 1.1rem;
+      font-size: 1.15rem;
       color: var(--accent);
-      margin-bottom: 2.5rem;
+      margin-bottom: 2.75rem;
     }
 
     p {
-      font-size: 1rem;
-      line-height: 1.7;
-      color: var(--fg);
-      margin-bottom: 1.25rem;
+      font-size: 1.02rem;
+      line-height: 1.75;
+      margin-bottom: 1.35rem;
     }
 
     .muted {
@@ -60,47 +65,51 @@
     }
 
     footer {
-      padding: 1.5rem 2rem;
+      padding: 1.75rem 2rem;
       font-size: 0.85rem;
       color: var(--muted);
-      border-top: 1px solid #1c1f24;
+      border-top: 1px solid rgba(255,255,255,0.06);
     }
 
     @media (max-width: 600px) {
       h1 {
-        font-size: 2.2rem;
+        font-size: 2.3rem;
       }
       main {
-        padding-top: 4rem;
+        padding-top: 4.5rem;
       }
     }
   </style>
+
 </head>
 
 <body>
   <main>
     <h1>Elisentra</h1>
 
-    <div class="tagline">
-      Biology-led sensing and translation
-    </div>
+```
+<div class="tagline">
+  Biology-led sensing and translation
+</div>
 
-    <p>
-      Elisentra is a science-driven initiative focused on the design and
-      translation of biological sensing systems across environmental and
-      industrial contexts.
-    </p>
+<p>
+  Elisentra is a science-driven initiative focused on the design and
+  translation of biological sensing systems across environmental and
+  industrial contexts.
+</p>
 
-    <p>
-      Our work spans biotechnology, bioengineering, and systems-level
-      approaches for applications in water and wastewater, agriculture,
-      mining, industry, and the built environment.
-    </p>
+<p>
+  Our work spans biotechnology, bioengineering, and systems-level
+  approaches for applications in water and wastewater, agriculture,
+  mining, industry, and the built environment.
+</p>
 
-    <p class="muted">
-      This site is intentionally minimal. Additional information will be
-      released as research, collaborations, and programs mature.
-    </p>
+<p class="muted">
+  This site is intentionally minimal. Additional information will be
+  released as research, collaborations, and programs mature.
+</p>
+```
+
   </main>
 
   <footer>
